@@ -1,33 +1,59 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warung UMKM</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Warung | UMKM</title>
+
+    <!-- Font Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Landing Page -->
+    <link rel="stylesheet" href="./LandingPage.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
     <header class="navbar">
-      <div class="brand">
-        <span class="brand-title">Warung</span>
-        <span class="brand-divider">|</span>
-        <span class="brand-subtitle">UMKM</span>
-      </div>
+        <div class="navbar-brand">
+            <span class="brand-name">Warung</span>
+            <span class="brand-divider"></span>
+            <span class="brand-category">UMKM</span>
+        </div>
     </header>
 
-    <main class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">Kelola warung,<br />mulai dari sini.</h1>
+    <!-- Main Content -->
+    <main class="main-container">
+        <section class="welcome-section">
 
-        <p class="hero-description">
-          Masuk untuk mengelola menu dan pesanan, atau daftarkan akun owner
-          Anda.
-        </p>
+            <h1>
+                Kelola warung,<br>
+                mulai dari sini.
+            </h1>
 
-        <div class="hero-actions">
-          <a href="#login" class="btn btn-primary"> Masuk &rarr; </a>
-          <a href="#register" class="btn btn-secondary"> Daftar Akun Baru </a>
-        </div>
-      </div>
+            <p>
+                Masuk untuk mengelola menu dan pesanan,
+                atau daftarkan akun owner Anda.
+            </p>
+
+            <div class="button-group">
+                <a href="./login.html" class="btn btn-primary">
+                    Masuk
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a href="./register.html" class="btn btn-outline">
+                    Daftar Akun Baru
+                </a>
+            </div>
+
+        </section>
     </main>
-  </body>
+
+</body>
 </html>
