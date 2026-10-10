@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Warung Ibu Dhiesna</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="brand">Warung</div>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="#">Pesanan</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Riwayat Transaksi</a></li>
+            </ul>
+        </div>
+
+        <div class="user-profile">
+            <div class="profile-info">
+                <div class="profile-name">Warung Ibu Dhiesna</div>
+                <div class="profile-status">• Toko Buka</div>
+            </div>
+            <div class="avatar-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="header-section">
+            <div>
+                <h1>Selamat datang, Warung Ibu Dhiesna</h1>
+                <p>Berikut ringkasan penjualan hari ini.</p>
+            </div>
+            <div class="date-badge">
+                <i class="fa-regular fa-calendar"></i> Hari ini, Sabtu, 3 Oktober 2026
+            </div>
+        </div>
+
+        <div class="status-card">
+            <div class="status-info">
+                <div class="status-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div>
+                    <div class="status-label">
+                        STATUS OPERASIONAL WARUNG
+                        <span class="badge-open"><span class="dot"></span>BUKA</span>
+                    </div>
+                    <div class="status-title">Warung Buka — Siap Menerima Pesanan</div>
+                </div>
+            </div>
+            <button class="btn-tutup">
+                <i class="fa-solid fa-power-off"></i> Tutup Warung Sementara
+            </button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div>
+                    <div class="stat-header">
+                        <span class="stat-title">Pendapatan Hari Ini</span>
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M6 12h.01M18 12h.01"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-value">Rp 0</div>
+                    <div class="stat-sub">Belum ada transaksi hari ini</div>
+                </div>
+                <div class="stat-footer">
+                    <i class="fa-solid fa-circle-info"></i> Terupdate saat penjualan
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div>
+                    <div class="stat-header">
+                        <span class="stat-title">Total Pesanan Hari Ini</span>
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z">
+                                </path>
+                                <path d="M8 7h8M8 11h8M8 15h5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stat-value">0 Pesanan</div>
+                    <div class="stat-sub">Belum ada pesanan masuk</div>
+                </div>
+                <div class="stat-footer">
+                    <i class="fa-solid fa-circle-check"></i> 0 antrean dapur siap menerima pesanan
+                </div>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <span class="dapur-badge">• DAPUR STANDBY</span>
+            <h2>Pesanan Perlu Diproses</h2>
+            <p>Pesanan berikut membutuhkan tindakan segera dari dapur.</p>
+        </div>
+
+        <div class="empty-card">
+            <div class="empty-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9z"></path>
+                    <path d="M7 8h10"></path>
+                    <path d="M12 3v5"></path>
+                </svg>
+            </div>
+            <div class="empty-title">Tidak Ada Pesanan yang Perlu Diproses</div>
+            <div class="empty-desc">
+                Semua pesanan sudah ditangani atau belum ada pesanan baru yang masuk. Warung siap menerima pesanan
+                berikutnya.
+            </div>
+            <div class="sound-badge">
+                <i class="fa-regular fa-bell"></i> Notifikasi suara berbunyi otomatis saat ada pesanan baru
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
