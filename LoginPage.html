@@ -1,14 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Warung UMKM</title>
-    <link rel="stylesheet" href="loginPage.css" />
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
     <header class="navbar">
-      <div class="brand">
+      <div class="brand" id="brandBtn" style="cursor: pointer;">
         <span class="brand-title">Warung</span>
         <span class="brand-divider">|</span>
         <span class="brand-subtitle">UMKM</span>
@@ -22,7 +25,7 @@
           <p class="card-subtitle">Masuk ke panel pengelolaan warung Anda.</p>
         </div>
 
-        <form class="login-form">
+        <form class="login-form" id="loginForm">
           <div class="form-group">
             <div class="form-label-row">
               <label for="email">EMAIL BISNIS</label>
@@ -50,11 +53,11 @@
                 placeholder="••••••••"
                 required
               />
-              <button type="button" class="btn-toggle-password">Lihat</button>
+              <button type="button" class="btn-toggle-password" id="togglePasswordBtn">Lihat</button>
             </div>
           </div>
 
-          <button type="submit" class="btn-login">Login &rarr;</button>
+          <button type="submit" class="btn-login" id="btnLogin">Login &rarr;</button>
         </form>
 
         <div class="card-footer">
@@ -62,5 +65,25 @@
         </div>
       </div>
     </main>
-  </body>
+
+    <script>
+      document.getElementById('brandBtn').addEventListener('click', function () {
+        window.location.href = 'LandingPage.html';
+      });
+
+      document.getElementById('loginForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        window.location.href = 'Dashboard.html';
+      });
+
+      const toggleBtn = document.getElementById('togglePasswordBtn');
+      const passwordInput = document.getElementById('password');
+
+      toggleBtn.addEventListener('click', function () {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        toggleBtn.textContent = isPassword ? 'Sembunyi' : 'Lihat';
+      });
+    </script>
+</body>
 </html>
